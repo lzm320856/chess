@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="zh-cn">
+    <title>指令棋盘</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <h2>指令棋盘</h2>
+    </header>
+    <main class="container">
+        <section class="wrap">
+            <table>
+                <tbody id="table-bg">
+                </tbody>
+            </table>
+            <div class="icon-target"></div>
+        </section>
+        <aside id="aside">
+            <section id="rule" class="inline">
+                <h3>指令大全</h3>
+                <ul>
+                    <li>
+                        <span class="">转向：</span>
+                        <span class="red">tur</span>
+                        <span> lef/rig/bac；</span>
+                    </li>
+                    <li>
+                        <span class="">移动：</span>
+                        <span class="red">go</span>
+                        <span> (num)；</span>
+                    </li>
+                    <li>
+                        <span>造墙：</span>
+                        <span class="">build </span>
+                        <span>(more);</span>
+                    </li>
+                    <li>
+                        <span>寻路：</span>
+                        <span>move to</span>
+                        <span> x,y;</span>
+                    </li>
+                    <li>
+                        <span>移动并转向：</span>
+                        <span>mov</span>
+                        <span> top/bot/lef/rig </span>
+                        <span> (num);</span>
+                    </li>
+                    <li>
+                        <span class="">移动不转向：</span>
+                        <span class="red">tra</span>
+                        <span> top/bot/lef/rig </span>
+                        <span> (num);</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="input-area" class="control-component">
+                <div id="rowNum" class="rowNum"></div>
+                <textarea id="text-input"></textarea>
+                <div class="options">
+                    <span id="submit" class="btn">提交</span>
+                    <span id="remove" class="btn">清空</span>
+                    <span id="reset" class="btn">重置</span>
+                    <span id="build" class="btn">造墙</span>
+                </div>
+            </section>
+        </aside>
+    </main>
+<script src="./js/index.js"></script>
+</body>
+</html>
